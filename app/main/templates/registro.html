@@ -1,0 +1,79 @@
+<ion-view view-title="Regístro">
+  <!-- do you want padding? -->
+  <ion-content style="margin-bottom:70px;">
+    <div class="backRegistro">
+      <div class="backBlue">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-100">
+        <form name="formRegistro padding">
+          <label class="item item-input item-floating-label">
+            <span class="input-label">Nombre(s)</span>
+            <input type="text" id="nombres" name="nombres" required placeholder="Nombre(s)" ng-model="datos.nombres">
+            <span ng-show="formRegistro.nombres.$error.required">Campo obligatorio</span>
+          </label>
+          <label class="item item-input item-floating-label">
+            <span class="input-label">Apellido(s)</span>
+            <input type="text" id="password" name="password" placeholder="Apellido(s)" required ng-model="datos.apellidos">
+            <span class="" ng-show="formRegistro.password.$error.required">Campo obligatorio</span>
+          </label>
+          <label class="item item-input item-floating-label">
+            <span class="input-label">Calle</span>
+            <input type="text" id="calle" name="calle" placeholder="Calle" required ng-model="datos.calle">
+            <span class="" ng-show="formRegistro.calle.$error.required">Campo obligatorio</span>
+          </label>
+          <label class="item item-input item-floating-label">
+            <span class="input-label">Colonia</span>
+            <input type="text" id="colonia" name="colonia" placeholder="Colonia" required ng-model="datos.colonia">
+            <span class="" ng-show="formRegistro.colonia.$error.required">Campo obligatorio</span>
+          </label>
+          <label class="item item-input item-floating-label">
+            <span class="input-label">Municipio</span>
+            <input type="text" id="municipio" name="municipio" placeholder="Municipio" required ng-model="datos.municipio">
+            <span class="" ng-show="formRegistro.municipio.$error.required">Campo obligatorio</span>
+          </label>
+
+          <label class="item item-input item-floating-label">
+            <span class="input-label">Cp</span>
+            <input type="number" id="cp" name="cp" placeholder="Cp" required ng-model="datos.cp">
+            <span class="" ng-show="formRegistro.cp.$error.required">Campo obligatorio</span>
+          </label>
+          <label class="item item-input item-floating-label">
+            <span class="input-label">Edad</span>
+            <input type="text" id="edad" name="edad" placeholder="Edad" required ng-model="datos.edad">
+            <span class="" ng-show="formRegistro.edad.$error.required">Campo obligatorio</span>
+          </label>
+          <label class="item item-input item-floating-label">
+            <span class="input-label">Fecha de nacimiento</span>
+            <input type="text" id="nacimiento" name="nacimiento" placeholder="Fecha de nacimiento" required ng-model="datos.nacimiento">
+            <span class="" ng-show="formRegistro.nacimiento.$error.required">Campo obligatorio</span>
+          </label>
+          <label class="item item-input item-floating-label">
+            <span class="input-label">Clave de elector</span>
+            <input type="text" id="clave" name="clave" placeholder="Clave de elector" required ng-model="datos.clave">
+            <span class="" ng-show="formRegistro.clave.$error.required">Campo obligatorio</span>
+          </label>
+          <label class="item item-input item-floating-label">
+            <span class="input-label">Lider/promotor</span>
+            <input type="text" id="lider" name="lider" placeholder="Lider/promotor" required ng-model="datos.lider">
+            <span class="" ng-show="formRegistro.lider.$error.required">Campo obligatorio</span>
+          </label>
+          <label class="item item-input item-floating-label">
+            <span class="input-label">Sección electoral</span>
+            <input type="text" id="electoral" name="electoral" placeholder="Sección electoral" required ng-model="datos.electoral">
+            <span class="" ng-show="formRegistro.electoral.$error.required">Campo obligatorio</span>
+          </label>
+          <label class="item item-input item-floating-label">
+            <span class="input-label">Telefono</span>
+            <input type="text" id="telefono" name="telefono" placeholder="Telefono" required ng-model="datos.telefono">
+            <span class="" ng-show="formRegistro.telefono.$error.required">Campo obligatorio</span>
+          </label>
+        </form>
+      </div>
+    </div>
+  </ion-content>
+  <ion-footer class="bar bar-footer p0" style="height:70px;">
+    <button type="submit" class="btn-g" ng-click="" ng-disabled="formRegistro.$invalid">INICIAR SESIÓN</button>
+  </ion-footer>
+</ion-view>

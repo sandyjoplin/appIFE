@@ -1,0 +1,34 @@
+<ion-view view-title="">
+  <!-- do you want padding? -->
+  <ion-content style="margin-bottom:70px;">
+    <div class="backLogin">
+    <div class="backBlue">
+
+    </div>
+    </div>
+    <div class="row">
+      <div class="col-100">
+        <form name="formIniciarSesion padding">
+          <label class="item item-input item-floating-label">
+            <span class="input-label">Correo</span>
+            <input type="email" id="correo" name="correo" required placeholder="Correo" ng-model="datos.correo">
+            <span ng-show="formIniciarSesion.correo.$error.required">Campo obligatorio</span>
+          </label>
+         
+          <label class="item item-input item-floating-label">
+            <span class="input-label">Contraseña</span>
+            <input type="password" id="password" name="password" placeholder="Contraseña" required ng-model="datos.password">
+            <span class="" ng-show="formIniciarSesion.password.$error.required">Campo obligatorio</span>
+          </label>
+        <div class="text-center"> <br>
+           <p class="textGray mtb20">¿Aún no tienes cuenta? <span class="textBlue" ui-sref="main.registro">REGISTRATE</span></p>
+          
+          </div>
+        </form>
+      </div>
+    </div>
+  </ion-content>
+  <ion-footer class="bar bar-footer p0" style="height:70px;">
+    <button type="submit" class="btn-g" ng-click="" ng-disabled="formIniciarSesion.$invalid">INICIAR SESIÓN</button>
+  </ion-footer>
+</ion-view>
